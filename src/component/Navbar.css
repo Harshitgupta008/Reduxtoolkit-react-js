@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+body {
+    background-color: rgb(226, 226, 226);
+}
+
+/* navbar css */
+.navbar {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.link-navbar {
+    cursor: pointer;
+}
+
+.navbar img {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.navbar img:hover {
+    border-bottom: 2px solid black;
+}
+
+/* card css */
+.card {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card .image-divcard {
+    padding: 10px;
+}
+
+.image-divcard img {
+    height: 12rem;
+    width: 18rem;
+    border-radius: 5px;
+}
+
+.card h4 {
+    padding-left: 15px;
+    margin-bottom: 8px;
+}
+
+.card:hover h4 {
+    color: red;
+}
+
+/* Home css */
+.homelink {
+    all: unset;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.homelink:hover {
+    transform: scale(1.05);
+   
+    background-color: rgba(0, 0, 0, 0.1);
+    
+}
