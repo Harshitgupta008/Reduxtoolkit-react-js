@@ -8,7 +8,7 @@ body {
     background-color: rgb(226, 226, 226);
 }
 
-/* navbar css */
+/**************************************** navbar css */
 .navbar {
     height: 3rem;
     width: 100%;
@@ -33,7 +33,7 @@ body {
     border-bottom: 2px solid black;
 }
 
-/* card css */
+/************************************ card css */
 .card {
     height: fit-content;
     width: fit-content;
@@ -64,7 +64,7 @@ body {
     color: red;
 }
 
-/* Home css */
+/*********************************** Home css */
 .homelink {
     all: unset;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -82,7 +82,200 @@ body {
 
 .homelink:hover {
     transform: scale(1.05);
-   
     background-color: rgba(0, 0, 0, 0.1);
-    
+}
+
+/****************************************** todo css */
+
+.todo-nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+}
+
+.todo-nav h4 {
+    cursor: pointer;
+}
+
+.todo-nav h4:active {
+    color: red;
+}
+
+.todo-nav button {
+    all: unset;
+    height: fit-content;
+    width: fit-content;
+    padding: 8px 30px;
+    color: white;
+    background: red;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.todo-nav button:hover {
+    background: rgb(226, 4, 4);
+}
+
+.todo-nav button:active {
+    background: rgb(176, 4, 4);
+}
+
+/****************************** AddList css */
+.modle-wraper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.addlist-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.addlist-container2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px 20px;
+}
+
+.cancle-todo-inp {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.cancle-todo-inp:hover {
+    color: red;
+}
+
+.inp-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inp-div lable {
+    padding: 0 10px;
+    color: gray;
+}
+
+.inp-div input {
+    all: unset;
+    border-radius: 15px;
+    padding: 10px;
+    height: 20px;
+    width: 250px;
+    border: 2px solid gray;
+}
+
+.addlist-container button {
+    all: unset;
+    height: fit-content;
+    width: fit-content;
+    padding: 6px 30px;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.addlist-container button:hover {
+    background: rgb(226, 4, 4);
+}
+
+.addlist-container button:active {
+    background: rgb(176, 4, 4);
+}
+
+/******************************* userlist css */
+
+.userlist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.userlist-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; 
+    max-width: 800px; 
+    background: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    transition: transform 0.2s ease-in-out;
+}
+
+.userlist-card:hover {
+    transform: scale(1.02); 
+}
+
+.userlist-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.userlist-card h2 {
+    cursor: pointer;
+}
+
+.userlist-card h4 {
+    font-size: 1rem; 
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .userlist-card {
+        padding: 8px 10px;
+    }
+
+    .userlist-card h4 {
+        font-size: 0.9rem;
+    }
+
+    .userlist-name {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .userlist-card {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .userlist-card h2 {
+        align-self: flex-end; 
+    }
 }
