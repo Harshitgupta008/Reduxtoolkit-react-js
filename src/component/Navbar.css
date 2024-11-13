@@ -268,14 +268,3 @@ body {
         gap: 5px;
     }
 }
-
-@media (max-width: 480px) {
-    .userlist-card {
-        flex-direction: column; 
-        align-items: flex-start;
-    }
-
-    .userlist-card h2 {
-        align-self: flex-end; 
-    }
-}
