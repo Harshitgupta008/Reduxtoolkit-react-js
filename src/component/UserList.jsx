@@ -1,12 +1,16 @@
 import { useSelector, useDispatch } from "react-redux";
 import { RemoveData } from "../redux/features/todos/todoSlice";
+import { useNavigate } from "react-router-dom";
 
 const UserList = () => {
     const todo = useSelector((state) => state.todo.todo);
     const dispatch = useDispatch();
-
+    const navigate = useNavigate();
     const DeleteData = (id)=>{
         dispatch(RemoveData(id));
+    }
+    const ViewsData = (id)=>{
+        return navigate(`/todos/${id}`)
     }
     return (
         <>
@@ -23,7 +27,7 @@ const UserList = () => {
                                 <h2>&#8942;</h2>
                                 <div className="userlist-hidecard">
                                     <ul>
-                                        <li>View</li>
+                                        <li onClick={()=>ViewsData(id)}>View</li>
                                         <li onClick={()=>DeleteData(id)}>Delete</li>
                                         <li>Update</li>
                                     </ul>

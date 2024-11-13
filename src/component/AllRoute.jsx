@@ -3,7 +3,7 @@ import Home from "./Home";
 import Todos from "./Todos";
 import RandomNumber from "./RandomNumber";
 import Fetchingapi from "./Fetchingapi";
-
+import UserId from "./UserId";
 const AllRoute = () => {
     return (
         <>
@@ -13,6 +13,7 @@ const AllRoute = () => {
                 <Route path="/fetching" element={<Fetchingapi/>}/>
                 <Route path="/generatenumber" element={<RandomNumber/>}/>
                 <Route path="/todos" element={<Todos/>}/>
+                <Route path="/todos/:id" element={<UserId/>}/>
             </Routes>
         </>
     )

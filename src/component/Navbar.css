@@ -176,7 +176,7 @@ body {
     gap: 5px;
 }
 
-.inp-div lable {
+.inp-div label {
     padding: 0 10px;
     color: gray;
 }
@@ -306,3 +306,36 @@ body {
     display: block;
 }
 
+/****************************************** userID css */
+
+.userid-container{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userid-card{
+    height: fit-content;
+    width: fit-content;
+    background: white;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.userid-card h3{
+    text-align: center;
+}
+.userid-card p{
+    color: red;
+}
+.userid-card strong{
+    color: black;
+}
+.userid-card:hover{
+    transform: scale(1.1);
+}

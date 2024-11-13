@@ -27,19 +27,19 @@ const AddList = ({ CloseMolde }) => {
                 <form className="addlist-container2">
                     <h3 className="cancle-todo-inp" onClick={CloseMolde}>&#x2715;</h3>
                     <div className="inp-div">
-                        <lable htmlFor="name">Name</lable>
+                        <label htmlFor="name">Name</label>
                         <input type="text" name="name" id="name" value={userData.name} onChange={handleInput} />
                     </div>
                     <div className="inp-div">
-                        <lable htmlFor="place">Place</lable>
+                        <label htmlFor="place">Place</label>
                         <input type="text" name="place" id="place" value={userData.place} onChange={handleInput} />
                     </div>
                     <div className="inp-div">
-                        <lable htmlFor="number">Number</lable>
+                        <label htmlFor="number">Number</label>
                         <input type="number" name="number" id="number" value={userData.number} onChange={handleInput} />
                     </div>
                     <div className="inp-div">
-                        <lable htmlFor="email">Email</lable>
+                        <label htmlFor="email">Email</label>
                         <input type="email" name="email" id="email" value={userData.email} onChange={handleInput} />
                     </div>
                     <button onClick={submitForm}>Add Detail</button>
