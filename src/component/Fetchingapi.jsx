@@ -1,7 +1,7 @@
 const Fetchingapi = () => {
     return (
         <>
-            <h2>FetchApi are comming....</h2>
+            <h2>Fetch Api are comming....</h2>
         </>
     )
 }

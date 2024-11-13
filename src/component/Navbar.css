@@ -84,7 +84,19 @@ body {
     transform: scale(1.05);
     background-color: rgba(0, 0, 0, 0.1);
 }
-
+.info{
+    width: 100%;
+    font-size: small;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.info h3{
+    text-align: center;
+    color: gray;
+}
+.info span{
+    color: black;
+}
 /****************************************** todo css */
 
 .todo-nav {
@@ -217,7 +229,7 @@ body {
     align-items: center;
     gap: 15px;
     padding: 20px;
-    width: 100%; 
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -225,19 +237,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%; 
-    max-width: 800px; 
+    width: 90%;
+    max-width: 800px;
     background: white;
     padding: 10px 15px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
     cursor: pointer;
-    
+
 }
+
 /* its error i wiil be fix it so ignore it  */
 .userlist-card:hover {
-    transform: scale(1); 
+    transform: scale(1);
 }
 
 .userlist-name {
@@ -252,7 +265,7 @@ body {
 }
 
 .userlist-card h4 {
-    font-size: 1rem; 
+    font-size: 1rem;
     margin: 0;
 }
 
@@ -271,7 +284,7 @@ body {
 }
 
 
-.userlist-hidecard{
+.userlist-hidecard {
     position: absolute;
     top: 30px;
     right: 10px;
@@ -280,7 +293,7 @@ body {
     display: none;
 }
 
-.userlist-hidecard ul{
+.userlist-hidecard ul {
     display: flex;
     align-items: baseline;
     flex-direction: column;
@@ -290,32 +303,35 @@ body {
     padding: 8px 10px;
 
 }
-.userlist-hidecard ul li{
+
+.userlist-hidecard ul li {
     all: unset;
     width: 100%;
     padding: 5px;
 }
-.userlist-hidecard li:hover{
+
+.userlist-hidecard li:hover {
     background-color: red;
     color: white;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.userlist-card:hover  .userlist-hidecard{
+.userlist-card:hover .userlist-hidecard {
     display: block;
 }
 
 /****************************************** userID css */
 
-.userid-container{
+.userid-container {
     height: 90vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.userid-card{
+
+.userid-card {
     height: fit-content;
     width: fit-content;
     background: white;
@@ -327,15 +343,66 @@ body {
     transition: all .2s ease-in-out;
     cursor: pointer;
 }
-.userid-card h3{
+
+.userid-card h3 {
     text-align: center;
 }
-.userid-card p{
+
+.userid-card p {
     color: red;
 }
-.userid-card strong{
+
+.userid-card strong {
     color: black;
 }
-.userid-card:hover{
+
+.userid-card:hover {
     transform: scale(1.1);
+}
+
+/*************************************************** RandomNumber css */
+.randomnumbe-container {
+    margin-top: 80px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.randomnumbe-container input {
+    all: unset;
+    border: 1px solid gray;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px 5px;
+    background: white;
+}
+
+.randomnumbe-container .card {
+    background-color: transparent;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.randomnumbe-container button {
+    all: unset;
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 5px;
+    border: 1px solid gray;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.randomnumbe-container button:active {
+    color: white;
+    background: red;
 }
