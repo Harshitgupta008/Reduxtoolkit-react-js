@@ -472,6 +472,45 @@ body {
 }
 /************************************************** fetching css */
 .fetching-container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+}
+.fetching-filtercontainer{
+    padding: 10px;
+    background: white;
+    display: flex;
+    border-top-right-radius: 10px;
+}
+
+.fetching-select {
+    height: fit-content;
+    width: 200px; 
+    padding: 8px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #ff2222;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fetching-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+    outline: none; 
+}
+
+.fetching-select option {
+    padding: 10px; 
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #ff2222;
+}
+
+
+.fetching-mapcontainer{
     width: 100%;
     height: fit-content;
     display: flex;
@@ -479,5 +518,19 @@ body {
     align-items: center;
     gap: 15px;
     flex-wrap: wrap;
-    margin: 15px 0;
+}
+
+
+@media (max-width: 600px) {
+    .fetching-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .fetching-filtercontainer{
+        display: flex;
+        justify-content:end;
+        align-items: center;
+        gap: 10px;
+    }
 }

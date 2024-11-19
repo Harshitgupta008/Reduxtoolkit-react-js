@@ -8,7 +8,7 @@ const ShoppingCard = ({image, category, price, rate}) => {
                 <h3>{category}</h3>
                 <hr className="shopping-hr"/>
                 <div className="shopping-price">
-                    <h5>{price}</h5>
+                    <h5>₹ {price}</h5>
                     <h5>({rate})</h5>
                 </div>
                 <hr className="shopping-hr"/>
