@@ -464,19 +464,23 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .shopping-card button:hover {
     background: rgb(213, 9, 9);
 }
+
 .shopping-card button:active {
     background: rgb(161, 7, 7);
 }
+
 /************************************************** fetching css */
-.fetching-container{
+.fetching-container {
     height: fit-content;
     width: 100%;
     display: flex;
 }
-.fetching-filtercontainer{
+
+.fetching-filtercontainer {
     padding: 10px;
     background: white;
     display: flex;
@@ -485,7 +489,7 @@ body {
 
 .fetching-select {
     height: fit-content;
-    width: 200px; 
+    width: 200px;
     padding: 8px 15px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -498,19 +502,18 @@ body {
 
 .fetching-select:focus {
     border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
-    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
 }
 
 .fetching-select option {
-    padding: 10px; 
+    padding: 10px;
     font-size: 16px;
     background-color: #ffffff;
     color: #ff2222;
 }
 
-
-.fetching-mapcontainer{
+.fetching-mapcontainer {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -522,14 +525,15 @@ body {
 
 
 @media (max-width: 600px) {
-    .fetching-container{
+    .fetching-container {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    .fetching-filtercontainer{
+
+    .fetching-filtercontainer {
         display: flex;
-        justify-content:end;
+        justify-content: end;
         align-items: center;
         gap: 10px;
     }
