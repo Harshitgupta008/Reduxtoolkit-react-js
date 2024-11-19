@@ -84,19 +84,23 @@ body {
     transform: scale(1.05);
     background-color: rgba(0, 0, 0, 0.1);
 }
-.info{
+
+.info {
     width: 100%;
     font-size: small;
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.info h3{
+
+.info h3 {
     text-align: center;
     color: gray;
 }
-.info span{
+
+.info span {
     color: black;
 }
+
 /****************************************** todo css */
 
 .todo-nav {
@@ -402,7 +406,78 @@ body {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 .randomnumbe-container button:active {
     color: white;
     background: red;
+}
+
+/*************************************** shopping card of fetching css */
+.shopping-card {
+    padding: 10px;
+    height: fit-content;
+    background-color: white;
+    width: 20rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* align-items: center; */
+}
+
+.shopping-image {
+    height: 18rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopping-card img {
+    height: 100%;
+    width: 90%;
+}
+
+.shopping-card h5 {
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.shopping-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.shopping-hr {
+    border: 1px solid rgb(175, 173, 173);
+}
+
+.shopping-card button {
+    all: unset;
+    background: red;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.shopping-card button:hover {
+    background: rgb(213, 9, 9);
+}
+.shopping-card button:active {
+    background: rgb(161, 7, 7);
+}
+/************************************************** fetching css */
+.fetching-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 15px 0;
 }
