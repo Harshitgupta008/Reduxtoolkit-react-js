@@ -9,10 +9,14 @@ export const randomnumberSlice = createSlice({
     initialState,
     reducers: {
         generateNumber: (state, action) => {
-            const digits = action.payload;
-            const range = Math.pow(10, digits-1);
-            const newNumber = Math.floor(range + Math.random() * 9*range);
-            state.randomnumber = newNumber;
+            let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+            
+            let newRandom = "";
+            for (let i = 0; i < action.payload; i++) {
+                let position = Math.floor(Math.random() * str.length);
+                newRandom += str.charAt(position);
+            }
+            state.randomnumber = newRandom;
         }
     }
 })
